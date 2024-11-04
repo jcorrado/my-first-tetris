@@ -1,0 +1,19 @@
+{
+ :paths ["src"]
+
+ :deps {
+        org.clojure/clojure {:mvn/version "1.12.0"}
+        org.clojure/core.async {:mvn/version "1.6.673"}
+        clojure-lanterna/clojure-lanterna {:mvn/version "0.9.7"}
+        }
+
+ :aliases {
+           :test {
+                  :extra-paths ["test"]
+                  :extra-deps {lambdaisland/kaocha {:mvn/version "1.91.1392"}}
+                  :main-opts ["-m" "kaocha.runner"]
+                  }
+
+           :run {:main-opts ["-m" "tetris.core"]}
+           }
+ }
