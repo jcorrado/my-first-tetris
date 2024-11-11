@@ -1,0 +1,5 @@
+.cpcache
+.nrepl-port
+venv
+__pycache__
+NOTES.org
